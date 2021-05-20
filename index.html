@@ -28,7 +28,38 @@
       後で今日の日付にかえる
       */
       document.write('<p class="date">20xx/01/23</p>');
-      document.write('10 + 3の計算結果は、' + (10+3) + 'です' );
+      /*
+      varは変数で、あらかじめ宣言するために使用される 
+      下記のanswerもクォーテーションで囲むとanswerという
+      文字だけが出力されてしまう。
+      */
+      var answer = 10 + 3;
+      document.write('10 + 3の計算結果は、' + answer + 'です');
+      document.write('<br>' + answer);
+
+      answer = 10 - 3;
+      document.write('<br>10 - 3 =' + answer);
+
+      answer = answer + 10;
+      document.write('<br>' + answer);
+
+      answer += 10;
+      answer -= 10;
+      answer *= 10;
+      answer /= 10;
+
+      answer = answer + 1
+      // 上記をさらに短くすると下記の記述になる
+      answer += 10;
+      // さらにショートカットすると下記のようになる
+      // 下記の書き方をインクリメント（加算）という
+      answer++;
+
+      answer = answer - 1
+      answer -= 10;
+      answer--; // ディクリメント(減算)
+
+      document.write('<br>' + answer);
     </script>
   </div>
 </body>
