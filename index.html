@@ -24,12 +24,8 @@
   <div class="container">
     <script>
       var today = new Date();
-
-      var newYear = new Date(2019, 12, 31);
-      document.write('<p>今日は' + today.getDate() + '日です</p>');
-      document.write('<p>大晦日は' + newYear.getDate() + 'です</p>');
-
-      document.write(Math.abs(-10)); //absは絶対値を求める計算式
+      var todayHtml = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+      document.write('<p class="date">' + todayHtml + '</p>');
     </script>
   </div>
 </body>
